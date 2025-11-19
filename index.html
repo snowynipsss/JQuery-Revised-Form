@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Registration Form</h2>
+        <form id="regForm">
+
+            <label>Full Name:</label>
+            <input type="text" id="fullname" class="validate" placeholder="Enter full name">
+            <div class="error-msg" id="fullname-error"></div>
+
+            <label>Age:</label>
+            <input type="number" id="age" class="validate" placeholder="Enter age">
+            <div class="error-msg" id="age-error"></div>
+
+            <label>Email:</label>
+            <input type="email" id="email" class="validate" placeholder="Enter email">
+            <div class="error-msg" id="email-error"></div>
+
+            <label>Phone Number:</label>
+            <input type="tel" id="phone" class="validate" placeholder="Enter phone number">
+            <div class="error-msg" id="phone-error"></div>
+
+            <label>Course:</label>
+            <select id="course" class="validate">
+                <option value="">-- Select Course --</option>
+                <option value="BTLED">BTLED</option>
+                <option value="BSIT">BSIT</option>
+                <option value="BSCS">BSCS</option>
+                <option value="BSED">BSED</option>
+            </select>
+            <div class="error-msg" id="course-error"></div>
+
+            <label>Password:</label>
+            <input type="password" id="password" class="validate" placeholder="Enter password">
+            <div class="error-msg" id="password-error"></div>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
